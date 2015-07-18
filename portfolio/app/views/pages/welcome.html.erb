@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+  <script src="https://drive.google.com/open?id=0B8Dgf9nZrR0SQ0l1MngwdFI3bWc"></script>
+  <script src="https://drive.google.com/open?id=0B8Dgf9nZrR0STU81enU4M0l4SU0"></script>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+</head>
+<body>
+
+
+<%= yield %>
+<header>
+  <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <a href="#">Home</a>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul>
+  </section>
+</nav>
+<section class="hero">
+  <div class="row intro">
+    <div class="small-centered medium-uncentered medium-6 large-7 columns">
+      <h1>Rob Lampard</h1>
+      <p>A junior front end developer with experience in HTML5, CSS3, PHP, MYSQL, and most recently ruby on rails!</p>
+    </div>
+    <div class="small-centered medium-uncentered medium-6 large-5 columns">
+      <div class="tech-img"></div>
+    </div>
+  </div>
+</section>
+
+</header>
+
+<div class="maincontent">
+  <div class="row">
+    <ul class="large-block-grid-3 small-block-grid-1 talents">
+        <li>
+        <img src="http://www.uxcentre.com/wp-content/uploads/2015/03/strategy.png" alt="Digital Marketing" />
+        <p>Social Media Management, Copywriting, Google Analytics & Web Master Tools, PPC, Domain Name &  Hosting Management</p>
+      </li>
+      <li>
+        <img src="http://www.atomix.com.au/media/icon_responsive_orange.png" alt="Responsive Web Design" />
+        <p>2 years experience in developing responsive web sites built upon the <a href="http://foundation.zurb.com/">Zurb Foundation Framework</a> using HTML5, CSS3, Jquery, PHP & MySQL.</p>
+      </li>
+      <li>
+        <img src="http://gracielaocampos.com/blog/wp-content/uploads/2014/12/presupuesto.png" alt="CMS systems" />
+        <p>Experience in maintaining, editing, and tailoring CMS's to suit clients needs, as well as training them in how to use their website.</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<footer>
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="mailto:rlampard92@gmail.com" class="button small">Get In Touch</a>
+    </div>
+  </div>
+</footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
